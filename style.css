@@ -1,18 +1,43 @@
-body{
+body {
     background-color: rgb(221, 246, 221);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 header {
     height: 50px;
-    background-color: rgb(152, 125, 180);
+    background-color: rgb(217, 195, 241);
 }
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+@media only screen and (max-width: 450px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+}
+
+
+article {
+    width: 100%;
+}
+
 h1 {
     border-bottom: 2px solid blueviolet;
     font-variant-caps: petite-caps;
 }
+
 h2 {
     border-bottom: 1px solid blueviolet;
 }
+
 img {
     width: 100%;
     border-radius: 5px;
@@ -22,7 +47,7 @@ img {
 }
 
 li {
-    color:chocolate;
+    color: chocolate;
     margin-left: 50px;
 }
 
@@ -30,14 +55,14 @@ p {
     margin: 20px 40px;
 }
 
-a{
-    color:rgb(64, 0, 255);
+a {
+    color: rgb(64, 0, 255);
     margin-bottom: 50px;
     margin-left: 10px;
     padding-top: 2px;
     padding-right: 5px;
     padding-bottom: 2px;
-    padding-left: 5px; 
+    padding-left: 5px;
 }
 
 footer {
@@ -54,9 +79,10 @@ footer {
     width: 100px;
     text-align: center;
     height: 30px;
-    padding-top: 5px;
+    padding-top: 10px;
     margin-bottom: 15px;
 }
+
 .button a {
     color: white;
     text-decoration: none;
